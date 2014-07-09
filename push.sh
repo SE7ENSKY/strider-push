@@ -40,9 +40,9 @@ case $CLONEOPTION in
 	noclone)
 		cd $TMPDIR/it/
 		git init
-		git add remote origin $REPO
+		git remote add origin $REPO
 		git add --all --force
 		git commit -m "$COMMIT_MSG"
-		sh $GIT -i $CERT push -f origin master:$BRANCH
+		sh $GIT -i $CERT push --force origin master:$BRANCH
 		;;
 esac
