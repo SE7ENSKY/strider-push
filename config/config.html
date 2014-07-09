@@ -25,6 +25,11 @@
       <textarea ng-model="config.cert" rows="7" style="width:100%;font-size:8px;"></textarea>
     </label>
 
+    <label class="checkbox">
+      <input type="checkbox" ng-model="config.noclone">
+      no clone – create new repository and force push
+    </label>
+
     <button class="btn btn-primary" ng-click="save()" ng-disabled="saving">Save</button>
 
   </div>

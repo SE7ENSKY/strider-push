@@ -16,6 +16,7 @@ module.exports = {
                 context.cmd({ command: "bash", args: [
                   __dirname + "/push.sh",
                   tmpfile.path,
+                  config.noclone ? "noclone" : "clone",
                   config.repo,
                   config.branch,
                   context.dataDir + "/" + config.dir,

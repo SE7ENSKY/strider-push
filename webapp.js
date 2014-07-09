@@ -4,6 +4,7 @@ module.exports = {
     repo: String,
     branch: String,
     format: String,
-    cert: String
+    cert: String,
+    noclone: Boolean
   }
 }
