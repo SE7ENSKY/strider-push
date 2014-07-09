@@ -22,8 +22,8 @@ COMMIT_MSG="${COMMIT_MSG//%REV%/$SOURCE_REV}"
 COMMIT_MSG="${COMMIT_MSG//%MSG%/$SOURCE_MSG}"
 COMMIT_MSG="${COMMIT_MSG//%BRANCH%/$SOURCE_BRANCH}"
 
-TMPDIR=`mktemp -d -t push` # for mac
-# TMPDIR=`mktemp -d` # for linux
+# TMPDIR=`mktemp -d -t push` # for mac
+TMPDIR=`mktemp -d` # for linux
 cp -r $DIR $TMPDIR/it
 rm -rf $TMPDIR/it/.git $TMPDIR/it/.git*
 sh $GIT -i $CERT clone $REPO $TMPDIR/clone
