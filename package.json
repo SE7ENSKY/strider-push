@@ -1,0 +1,38 @@
+{
+  "name": "strider-push",
+  "version": "1.0.0",
+  "description": "Support for deploy via push",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Se7enSky/strider-push.git"
+  },
+  "keywords": [
+    "strider",
+    "deploy",
+    "git",
+    "push"
+  ],
+  "author": {
+    "name": "Ivan Kravchenko"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "strider": {
+    "id": "push",
+    "type": "job",
+    "title": "Push",
+    "icon": "icon.png",
+    "worker": "worker.js",
+    "webapp": "webapp.js",
+    "config": {
+      "controller": "PushController"
+    }
+  },
+  "dependencies": {
+    "temp": "~0.8.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Se7enSky/strider-push/issues"
+  },
+  "homepage": "https://github.com/Se7enSky/strider-push"
+}

@@ -1,0 +1,31 @@
+<h3>Push settings</h3>
+
+<div class="row-fluid">
+  <div class="span6">
+
+    <label>Source directory
+      <input type="text" ng-model="config.dir"/>
+    </label>
+
+    <label>
+      <p class="help-text pull-right">%REV%, %MSG%, %BRANCH%</p>
+      Commit message format
+      <input style="width:100%" type="text" ng-model="config.format"/>
+    </label>
+
+    <label>Destination repository URL
+      <input style="width:100%" type="text" ng-model="config.repo"/>
+    </label>
+    
+    <label>Destination repository branch
+      <input type="text" ng-model="config.branch"/>
+    </label>
+
+    <label>Certificate (private) for auth
+      <textarea ng-model="config.cert" rows="7" style="width:100%;font-size:8px;"></textarea>
+    </label>
+
+    <button class="btn btn-primary" ng-click="save()" ng-disabled="saving">Save</button>
+
+  </div>
+</div>
